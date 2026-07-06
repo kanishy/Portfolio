@@ -9,8 +9,6 @@ const ProjectCard = ({ project }) => {
     const { path, imgPath, title, description, preview, source, technologies } = project;
     const [isVisible, setIsVisible] = useState(false);
     const divRef = useRef(null);
-    console.log(title);
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {

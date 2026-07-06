@@ -3,9 +3,6 @@ import './SkillCard.styles.css';
 import { useEffect, useRef } from 'react';
 
 const SkillCard = ({ imgPath, name, progress, imgStyle, documentation, ...otherProps }) => {
-
-    console.log(documentation);
-    
     let progressColor;
     if (progress < 25) {
         progressColor = '#ff0000';
